@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>      
+
+    body{
+      background-color: rgb(243, 232, 218);
+   height: 100vh;
+   width: 100vw;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+       .bal{
+        font-size: 30px;
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         background-color: burlywood;
+         position: absolute;
+         padding: 5px 10px;
+         border-radius: 10px;
+         border: 3px solid black;
+         right: 200px;
+         top: 50px;
+
+       }
+
+       .sc{
+         font-size: 30px;
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         background-color: burlywood;
+         position: absolute;
+         padding: 5px 10px;
+         border-radius: 10px;
+         border: 3px solid black;
+         left: 200px;
+         top: 50px;
+       }
+
+       form p,form label{
+        font-size: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
+       
+       form input{
+        font-size: 30px;
+        padding: 5px 5px 5px 10px;
+        outline: none;
+        border-radius: 10px;
+        border:2px solid lightskyblue;
+        text-align: center;
+        margin: 10px 0px;
+
+       }
+
+       form{ 
+          height: 450px;
+          border: 10px solid rgb(129, 227, 73);
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 20px;
+          justify-content: space-evenly;
+       }
+  
+    </style>
+</head>
+<body>
+
+     
+    <div class="bal">
+      Current Balance : <span class="money">100</span>
+    </div>
+    <div class="sc">
+      SCORE : <span class="score">0</span>
+    </div>
+
+    <form action="">
+       <p class="choice">ENTER NUM BETWEEN 1 TO 100</p>
+       <label for="" >Enter Num  </label>
+       <input type="text" class="numval">
+       <input type="submit">
+       <p class="suggestion">SUGGESTION : <span class="sugg">☀️</span></p>
+       <p class="res">Result : <span class="result">😊</span></p>
+    </form>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
